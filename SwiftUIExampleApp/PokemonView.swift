@@ -15,10 +15,12 @@ struct PokemonView: View {
         VStack {
             Image("pokeball")
                 .resizable()
+                .scaledToFit()
                 .padding()
                 .frame(height: 350.0)
             Image(pokemon.imageName)
                 .resizable()
+                .scaledToFit()
                 .padding()
                 .background(Color.white)
                 .clipShape(Circle())

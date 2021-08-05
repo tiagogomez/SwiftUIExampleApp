@@ -13,8 +13,12 @@ struct PokemonRow: View {
     
     var body: some View {
         HStack {
-            Image(pokemon.imageName).resizable().frame(width: 70, height: 70)
-            Text(pokemon.name).font(.largeTitle)
+            Image(pokemon.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(height: 70)
+            Text(pokemon.name)
+                .font(.largeTitle)
         }
     }
 }
