@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,7 +32,7 @@
 		4DD9409526BD8CEC0082BE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9409426BD8CEC0082BE51 /* Assets.xcassets */; };
 		4DD9409826BD8CEC0082BE51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9409726BD8CEC0082BE51 /* Preview Assets.xcassets */; };
 		4DD9409B26BD8CEC0082BE51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9409926BD8CEC0082BE51 /* LaunchScreen.storyboard */; };
-		4DD940A026BD8CEC0082BE51 /* PokemonClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4DD9408C26BD8CE90082BE51 /* PokemonClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DD940A026BD8CEC0082BE51 /* PokemonClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4DD9408C26BD8CE90082BE51 /* PokemonClip.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DD940AB26BD8DD30082BE51 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD9405C26BAF48D0082BE51 /* Pokemon.swift */; };
 		4DD940AF26BD8DD80082BE51 /* PokemonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD9405926BAF2E40082BE51 /* PokemonRow.swift */; };
 		4DD940BA26BD8EA40082BE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BC60B26BADE2400EC78C0 /* Assets.xcassets */; };
@@ -109,6 +109,8 @@
 		4DD9409A26BD8CEC0082BE51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DD9409C26BD8CEC0082BE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DD9409D26BD8CEC0082BE51 /* PokemonClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PokemonClip.entitlements; sourceTree = "<group>"; };
+		4DD940BF26BD940D0082BE51 /* SwiftUIExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIExampleApp.entitlements; sourceTree = "<group>"; };
+		4DD940C026BD940D0082BE51 /* PokemonWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PokemonWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		4D7BC5F926BADE2000EC78C0 = {
 			isa = PBXGroup;
 			children = (
+				4DD940C026BD940D0082BE51 /* PokemonWidgetExtension.entitlements */,
 				4D7BC60426BADE2000EC78C0 /* SwiftUIExampleApp */,
 				4DD9406E26BC40680082BE51 /* PokemonWidget */,
 				4DD9408D26BD8CE90082BE51 /* PokemonClip */,
@@ -162,6 +165,7 @@
 		4D7BC60426BADE2000EC78C0 /* SwiftUIExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				4DD940BF26BD940D0082BE51 /* SwiftUIExampleApp.entitlements */,
 				4D7BC60526BADE2000EC78C0 /* AppDelegate.swift */,
 				4D7BC60726BADE2000EC78C0 /* SceneDelegate.swift */,
 				4D7BC60926BADE2000EC78C0 /* PokemonView.swift */,
@@ -407,6 +411,7 @@
 		};
 		4DD9409F26BD8CEC0082BE51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4DD9408B26BD8CE90082BE51 /* PokemonClip */;
 			targetProxy = 4DD9409E26BD8CEC0082BE51 /* PBXContainerItemProxy */;
 		};
@@ -554,6 +559,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIExampleApp/SwiftUIExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4LRDV72ARX;
@@ -565,6 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.SwiftUIExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -576,6 +583,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIExampleApp/SwiftUIExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4LRDV72ARX;
@@ -587,6 +595,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.SwiftUIExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -597,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PokemonWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LRDV72ARX;
 				INFOPLIST_FILE = PokemonWidget/Info.plist;
@@ -608,6 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.SwiftUIExampleApp.PokemonWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -618,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PokemonWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LRDV72ARX;
 				INFOPLIST_FILE = PokemonWidget/Info.plist;
@@ -629,6 +641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.SwiftUIExampleApp.PokemonWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
